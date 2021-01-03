@@ -46,6 +46,10 @@ function write_all_titles_uppercase()
 }
 add_shortcode('write_all_posts', 'write_all_titles_uppercase');
 
-
+function make_all_titles_hello($post)
+{
+    $post->post_title = 'HELLO'; 
+}
+add_filter('the_post', 'make_all_titles_hello');
 
 defined('ABSPATH') or die("Thanks for visting");
