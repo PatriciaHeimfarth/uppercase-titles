@@ -20,3 +20,5 @@ add_filter('the_post', 'write_all_titles_uppercase');
 
 
 defined('ABSPATH') or die("Thanks for visting");
+
+?>
