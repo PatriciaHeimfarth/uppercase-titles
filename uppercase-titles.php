@@ -33,4 +33,21 @@ function get_first_title()
 }
 add_shortcode('write_first_title', 'get_first_title');
 
+function write_all_titles_uppercase()
+{
+    global $loop;
+    $a = array ();
+    $all_posts = get_posts(array('numberposts' => -1));
+    $loop = new WP_Query($all_posts);
+    if ($loop->have_posts()) {
+        while ($loop->have_posts()) {
+            $loop->the_post();
+            array_push($a, the_title());
+        }
+    }
+}
+add_shortcode('write_all_posts', 'write_all_titles_uppercase');
+
+
+
 defined('ABSPATH') or die("Thanks for visting");
