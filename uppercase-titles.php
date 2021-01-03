@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:  Uppercase Titles Plugin
- * Description: Plugin for uppercase all Post Titles
+ * Description: Plugin for uppercase all post titles
  * Version: 1.0
  * Author: Patricia Heimfarth
  * License: GPL2
